@@ -23,3 +23,14 @@
    mov ax, [0002]   cs=0ff0h, ip=010bh
 
   程序和数据没有区别，都是内存单元中的二进制码。当内存单元被CS:IP指定时其存储的就被当做程序执行。当内存单元被DS:[address]指定时其存储的就是数据。
+
+
+*检测点3.2
+
+1. mov bx, 2000h
+   mov ss, bx
+   mov sp, 0010h
+
+2. mov bx, 1000h
+   mov ss, bx
+   mov sp, 0000h
