@@ -1,4 +1,4 @@
-1. 
+
 assume cs:main
 main segment
   mov ax,20h
