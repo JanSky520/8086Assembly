@@ -19,14 +19,13 @@ code segment
     mov ax,data
     mov ds,ax
     mov bx,0
-    mov si,0
     mov cx,4
 
   i:push cx
     push bx
     mov cx,4
     
-  j:mov al,ds:[bx+3+si]
+  j:mov al,ds:[bx+3]
     and al,11011111b
     mov ds:[bx+3],al
     inc bx
