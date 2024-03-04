@@ -1,4 +1,4 @@
-*检测点2.1
+* 检测点2.1
 
 mov ax, 62627	AX = F4A3H
 mov ah, 31H	AX = 31A3H
